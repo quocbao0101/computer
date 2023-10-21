@@ -1,0 +1,9 @@
+<mat-toolbar class="header">
+  <div>Logo</div>
+</mat-toolbar>
+<div *ngFor="let category of home">
+  <p>{{ category.name }}</p>
+  <a [routerLink]="['/details', category.id]">
+    edit
+  </a>
+</div>
